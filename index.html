@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./pc.css" media="(min-width:700px)">
+
+    <title>Juego adivina el número</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="info__container">
+            <h1>
+                Juego adivina el número
+            </h1>
+            <p class="info__container--parrafo">
+                Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos.
+                Vamos a decirte si tu número es más alto o más bajo.
+            </p>
+        </div>
+
+
+        <div class="form__container">
+            <label for="input__numero">
+                Adivina el numero:
+            </label>
+            <input type="number" id="input__numero" required>
+            <button class="enviar__respuesta">Enviar respuesta</button>
+        </div>
+
+        <section class="respuesta">
+            <p class="respuestasAnteriores"></p>
+            <p class="ayudaRespuesta"></p>
+            <button class="nuevoJuego inactive">Juego nuevo</button>
+        </section>
+    </div>
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
